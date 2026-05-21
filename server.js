@@ -84,7 +84,7 @@ class OCPPWebSocketServer {
             const chargePointId = req.body.chargePointId || uuidv4();
             // Always use wss for the deployed domain
             const protocol = 'wss';
-            const host = 'cms-ocpp.vercel.app';
+           const host = 'samku112.onrender.com';
             
             const wsUrl = `${protocol}://${host}/ocpp/${chargePointId}`;
             
