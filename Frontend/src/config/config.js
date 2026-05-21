@@ -6,7 +6,7 @@ const isDevelopment =
 
 const API_BASE_URL = isDevelopment
   ?'http://localhost:5000/api'
-  : 'https://cms-backend-nkfp.onrender.com/api';
+  : 'https://samku112.onrender.com/api';
 // API Endpoints
 export const API_ENDPOINTS = {  // Auth endpoints
   AUTH: {
@@ -119,13 +119,13 @@ export const API_ENDPOINTS = {  // Auth endpoints
 // WebSocket configuration - Use secure websocket for production, but try ws for development
 // Using regular ws protocol for development to avoid self-signed certificate issues
 export const WEBSOCKET_URL = isDevelopment 
-  ? 'wss://cms-backend-nkfp.onrender.com'
-  : 'wss://cms-backend-nkfp.onrender.com';
+  ? 'wss://samku112.onrender.com'
+  : 'wss://samku112.onrender.com';
 
 // ✅ ADD THIS
 export const OCPP_BASE_URL = isDevelopment
   ? "ws://localhost:5000/ocpp"
-  : "wss://cms-backend-nkfp.onrender.com/ocpp";
+ : 'https://samku112.onrender.com/api';
 // App configuration
 export const APP_CONFIG = {
   DEFAULT_PAGE_SIZE: 10,
