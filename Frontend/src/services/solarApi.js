@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/solar";
+const BASE_URL = "https://samku-backend.onrender.com/api/solar";
 
 export const getLatestSolar = async () => {
   const res = await fetch(`${BASE_URL}/latest`);
