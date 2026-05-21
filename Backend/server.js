@@ -85,7 +85,10 @@ class SamkuCMSServer {
            "https://samku-cms.vercel.app",
            "https://cms-o4rp.onrender.com"
          ]
-        : ["https://cms-o4rp.onrender.com"],
+        : [
+   "https://cms-o4rp.onrender.com",
+   "https://samku-new-4i2u.vercel.app"
+ ],
       credentials: true,
       optionsSuccessStatus: 200,
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
@@ -107,7 +110,10 @@ class SamkuCMSServer {
        ].includes(origin)) {
           res.setHeader('Access-Control-Allow-Origin', origin);
         }
-      } else if (origin === 'https://cms-o4rp.onrender.com') {
+     } else if (
+   origin === 'https://cms-o4rp.onrender.com' ||
+   origin === 'https://samku-new-4i2u.vercel.app'
+) {
         res.setHeader('Access-Control-Allow-Origin', origin);
       }
       res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
